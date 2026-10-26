@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" data-theme="paper" data-lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>9raya</title>
+<meta name="theme-color" content="#f4efe6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;800&family=Fraunces:opsz,wght@9..144,500;9..144,800&family=Fredoka:wght@500;700&family=Space+Grotesk:wght@400;500;700&family=Syne:wght@600;800&family=Unbounded:wght@500;800&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div id="glow"></div>
+<div id="grain"></div>
+<div id="progress"><i></i></div>
+
+<main id="stage">
+  <section class="screen active" id="intro">
+    <h1 id="introText"></h1>
+  </section>
+
+  <section class="screen" id="survey">
+    <button id="back" type="button"></button>
+    <div id="qwrap"></div>
+    <span id="count"></span>
+  </section>
+
+  <section class="screen" id="home">
+    <header id="homeHead"><h2 id="homeTitle"></h2><p id="homeSub"></p></header>
+    <nav id="tabs"></nav>
+    <div id="homeBody"></div>
+    <button id="retake" type="button"></button>
+  </section>
+</main>
+
+<aside id="dock">
+  <button id="dockToggle" type="button" aria-label="menu">&#9881;</button>
+  <div class="row" id="langs"></div>
+  <div class="row" id="themes"></div>
+  <div class="row small">
+    <button id="mute" type="button" aria-label="sound"></button>
+    <button id="reset" type="button" aria-label="reset">&#8634;</button>
+  </div>
+</aside>
+
+<script src="js/i18n.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/data.js"></script>
+<script src="js/config.js"></script>
+<script src="js/db.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/bg.js"></script>
+<script src="js/scheduler.js"></script>
+<script src="js/planner.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
